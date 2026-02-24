@@ -8,7 +8,7 @@ move_x = [-1, 1, 0, 0]
 move_y = [0, 0, -1, 1]
 
 def bfs(graph, start_x, start_y):
-    queue = deque([(start_x, start_y)])
+    queue = deque([(start_x, start_y)]) ## 인자로 들어온 데이터 순회하면서 꺼내야하기 대문에 묶어줘야됨
     visited[start_x][start_y] = True
 
     while queue:
